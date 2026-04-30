@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #e5e7eb;
+  background-color: #0f172a;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  text-align: center;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+}
+
+.primary-btn {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.primary-btn:hover {
+  background-color: #0ea5e9;
+}
+
+.secondary-btn {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary-btn:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* About */
+.about-text {
+  color: #cbd5f5;
+  max-width: 600px;
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
